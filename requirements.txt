@@ -1,0 +1,9 @@
+# Pin exact versions before release: run `pip freeze | findstr /i "numpy pandas scipy scikit-learn tslearn matplotlib openpyxl"`
+# on the machine that produced the manuscript results and paste the versions here (Python 3.12.7).
+numpy
+pandas
+scipy
+scikit-learn
+tslearn
+matplotlib
+openpyxl
