@@ -10,14 +10,22 @@ Clusters 20 microalgal/cyanobacterial strains by the temporal behaviour of five 
 
 **Folder structure**
 01_training_and_validation.py   single analysis entry point
+
 02_figures_corrected.py         single figure-generation entry point
+
 03_reviewer_extra_checks.py     sensitivity analyses (warping window, band subsets, medium confounding)
+
 strain_metadata.csv             Species, Medium (+ optional Salinity, Accession) for all 20 strains
+
 requirements.txt
+
 data/hyperspectral_xlsx/        1,860 workbooks (20 strains x 31 days x 3 images); see Data below
+
 outputs/                        created by the scripts
+
 **Install**
 pip install -r requirements.txt
+
 **Run (in this order)**
 python 01_training_and_validation.py --data_dir data/hyperspectral_xlsx
 python 02_figures_corrected.py --out_dir outputs --dpi 600
