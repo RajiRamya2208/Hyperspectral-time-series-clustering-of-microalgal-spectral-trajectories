@@ -31,7 +31,6 @@ python 01_training_and_validation.py --data_dir data/hyperspectral_xlsx
 python 02_figures_corrected.py --out_dir outputs --dpi 600
 python 03_reviewer_extra_checks.py --out_dir outputs --metadata strain_metadata.csv
 
-Optional: --selection_geometry euclidean reproduces the pre-review (Euclidean-silhouette) selection. Script 01 takes about 55 minutes on an Intel i7-10750H / 16 GB RAM (reading 1,860 workbooks, Soft-DTW grid).
 
 **Expected outputs (in outputs/)**
 model_results.pkl : the single saved result object read by scripts 02 and 03
